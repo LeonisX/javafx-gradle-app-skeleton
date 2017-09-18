@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="md.leonis.demo.view.MainStageController">
+  <left>
+    <Accordion fx:id="accordion" prefHeight="400.0" prefWidth="195.0" BorderPane.alignment="CENTER">
+      <panes>
+        <TitledPane animated="false" text="Controls">
+          <VBox prefHeight="200.0" prefWidth="100.0">
+            <Hyperlink onAction="#showPane" text="Show JavaFX pane" />
+            <Hyperlink onAction="#showEmptyPane" text="Show empty pane" />
+            <Hyperlink onAction="#showAlert" text="Show alert" />
+            <Hyperlink onAction="#showWindow" text="Open new window" />
+          </VBox>
+        </TitledPane>
+      </panes>
+    </Accordion>
+  </left>
+</BorderPane>
